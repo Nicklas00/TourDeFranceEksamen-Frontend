@@ -4,5 +4,9 @@
   text-align: center;
   float: right;
   height: 100%;
+}
 
+.createRytter{
+  margin: auto;
+  text-align: center;
 }

@@ -25,7 +25,7 @@ async function loadCykelrytter(url){
       //ddCykelhold2 +
       //"<td><select id='cykelhold'> <option value=" + cykelryttere[i].cykelhold.id + "> "+ cykelholdNavn +" </option></select> </td>"
       "<td><select id='cykelhold'> <option value=" + cykelryttere[i].cykelhold.id + "> "+ cykelryttere[i].cykelhold.cykelholdNavn +" </option></select> </td>" +
-      "<td><button id='delete-btn' onclick='deleteRytter(" + cykelryttere[i].id +")'>Fjern rytter</button> </td>" +
+      "<td><button class='btn btn-outline-danger' id='delete-btn' onclick='deleteRytter(" + cykelryttere[i].id +")'>Fjern rytter</button> </td>" +
       "</tr>";
 
     table.innerHTML += row;
