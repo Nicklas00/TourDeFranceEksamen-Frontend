@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opret Cykelrytter</title>
+
+  <script src="../js/createEntity.js" defer></script>
+  <script src="../js/crud.js" defer></script>
+  <script src="../js/loadCykelrytter.js" defer></script>
+
+</head>
+<h1>Opret cykelrytter</h1>
+<body>
+<div>
+<div class="inp-fields">
+
+  <div class="inp-child-1">
+    <label>Navn</label><br>
+    <input id="rytter-navn">
+  </div>
+
+  <div class="inp-child-2">
+    <label>Alder</label><br>
+    <input id="rytter-alder" step="1" type="number">
+  </div>
+
+  <div class="inp-child-3">
+    <label>Nationalitet</label><br>
+    <input id="rytter-nationalitet">
+  </div>
+
+  <div class="inp-child-4">
+    <label>Hold</label><br>
+    <select name="rytter-hold" id="rytter-hold">
+      <option value="1">Team DSM</option>
+      <option value="2">Lotto Soudal</option>
+      <option value="3">Confidis</option>
+      <option value="4">Movistar Team</option>
+    </select>
+  </div>
+
+</div>
+<button id="item-add-btn" class="btn btn-outline-dark btn-add" onclick="createRytter()">Tilføj rytter</button>
+</div>
+
+
+</body>
+</html>
